@@ -48,4 +48,8 @@ express()
   })
 
   // Node spins up our server and sets it to listen on the PORT we defined above.
-  .listen(PORT, () => console.log(`Listening on port ${PORT}`));
+  .listen(PORT, () =>
+    console.log(
+      `Listening on port ${PORT}.\n Check it out at http://localhost:${PORT}`
+    )
+  );

@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <head>
-    <title>Node: Workshop 1</title>
-    <link rel="stylesheet" href="./css/styles.css">
+  <title>Node: Workshop 1</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Node: Workshop 1</h1>
-    </header>
-    <div class='main'>
-        <h2>Part 1</h2>
-        <div class='content'>
-            <%- include('../partials/questions/3') %>
-            <div class='box answer'>
-                <h3>Answer</h3>
-                <!-- render answer here -->
-                
-            </div>
+  <header>
+    <h1>Node: Workshop 1</h1>
+  </header>
+  <div class="main">
+    <h2>Part 1</h2>
+    <div class="content">
+      <%- include('../partials/questions/3') %>
+      <div class="box answer">
+        <h3>Answer</h3>
+        <!-- render answer here -->
+        <h4><%=homer.name%></h4>
+        <div style="display: flex; flex-direction: column">
+          <img
+            style="width: 200px; height: 300px; margin: 10px 0;"
+            src="<%=homer.imageUrl%>"
+          />
+          <p>
+            <span style="font-weight: bold;">Date Of Birthday:</span>
+            <%=homer.dob%>
+          </p>
+          <p>
+            <span style="font-weight: bold;">Profession: </span
+            ><%=homer.profession%>
+          </p>
+          <p>
+            <span style="font-weight: bold;">Favorite Food:</span>
+            <%=homer.favoriteFood%>
+          </p>
+          <p>
+            <span style="font-weight: bold;">Favorite Beverage:</span>
+            <%=homer.favoriteBeverage%>
+          </p>
         </div>
+      </div>
     </div>
+  </div>
 </body>
+
+<!-- imageUrl:
+"https://vignette.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png",
+name: "Homer Jay Simpson",
+dob: "May 12, 1956",
+profession: "Low-level Safety Inspector",
+favoriteFood: "Donuts",
+favoriteBeverage: "Duff Beer" -->
