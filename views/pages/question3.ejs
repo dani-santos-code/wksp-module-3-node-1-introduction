@@ -1,9 +1,6 @@
 <%- include('../partials/questions/head') %>
-<%- include('../partials/questions/header') %>
-
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
+<body>
+  <%- include('../partials/questions/header') %>
   <div class="main">
     <h2>Part 1</h2>
     <div class="content">
@@ -34,15 +31,9 @@
             <%=homer.favoriteBeverage%>
           </p>
         </div>
+        <%- include( '../partials/questions/navigation', {before: "/question2",
+        next: "/question4"}) %>
       </div>
     </div>
   </div>
 </body>
-
-<!-- imageUrl:
-"https://vignette.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png",
-name: "Homer Jay Simpson",
-dob: "May 12, 1956",
-profession: "Low-level Safety Inspector",
-favoriteFood: "Donuts",
-favoriteBeverage: "Duff Beer" -->

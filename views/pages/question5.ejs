@@ -1,8 +1,6 @@
 <%- include('../partials/questions/head') %>
-
-  <header>
-    <h1>Node: Workshop 1</h1>
-  </header>
+<body>
+  <%- include('../partials/questions/header') %>
   <div class="main">
     <h2>Part 1</h2>
     <div class="content">
@@ -19,6 +17,8 @@
             <li style="padding: 3px;"><%=girl%></li>
             <% });%>
           </ol>
+          <%- include( '../partials/questions/navigation', {before:
+          "/question4", next: "/question6"}) %>
         </div>
       </div>
     </div>
