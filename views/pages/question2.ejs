@@ -1,20 +1,24 @@
 <%- include('../partials/questions/head') %>
 <body>
   <%- include('../partials/questions/header') %>
-  <div class="main">
-    <h2>Part 1</h2>
-    <div class="content">
-      <%- include('../partials/questions/2') %>
-      <div class="box answer">
-        <h3>Answer</h3>
-        <!-- render answer here -->
-        <p><%-sentence%></p>
-        <p><%=sentence%></p>
-        <!-- Notice that the commenting inside the ejs brackets is JS. -->
-        <!-- Keep that in mind for later. Everything between those brackets IS JavaScript. -->
-        <%- include( '../partials/questions/navigation', {before: "/question1",
-        next: "/question3"}) %>
+  <body>
+    <div class="main">
+      <h2>Part 1</h2>
+      <div class="content">
+        <%- include('../partials/questions/2') %>
+        <div class="box answer">
+          <h3>Answer</h3>
+          <!-- render answer here -->
+          <p><%-sentence%></p>
+          <p><%=sentence%></p>
+          <!-- Notice that the commenting inside the ejs brackets is JS. -->
+          <!-- Keep that in mind for later. Everything between those brackets IS JavaScript. -->
+          <%- include( '../partials/questions/navigation', {before:
+          "/question1", next: "/question3"}) %>
+        </div>
       </div>
     </div>
-  </div>
+  </body>
 </body>
+
+<% %>
